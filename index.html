@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OTP Generator</h1>
+        <p>Generate your secure OTP</p>
+
+        <div class="otp-box" id="otp">
+            ------ 
+        </div>
+
+        <select id="length">
+            <option value="4">4 Digit OTP</option>
+            <option value="6" selected>6 Digit OTP</option>
+        </select>
+
+        <button onclick="generateOTP()">Generate OTP</button>
+        <button onclick="copyOTP()">Copy OTP</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
